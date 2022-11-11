@@ -95,6 +95,7 @@ def main():
     var_list, snp_dict = generate_required_lists(snp_df)
     result = process_snp_df(df, var_list, sample_name, snp_dict, snp_df)
     final_df = generate_output(result)
+
     final_df.to_csv(os.path.abspath(args.output), index=False, sep='\t')
 
     mod_scores = admix(os.path.abspath(args.output), args.model)

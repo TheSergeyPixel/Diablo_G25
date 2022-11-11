@@ -1,0 +1,8 @@
+name: diablo_g25
+
+dependencies:
+  - pandas>=1.5.1
+  - numpy>=1.23.4
+  - pip
+  - pip:
+      admix
