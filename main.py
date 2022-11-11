@@ -4,6 +4,7 @@ import argparse
 import os
 from time import time
 from numpy import ceil
+from src import admix
 
 parser = argparse.ArgumentParser(description='Diablo_G25')
 
@@ -21,7 +22,7 @@ def read_vcf():
                 index_df = i
                 sample = n.split()[-1]
 
-    df_vcf = pd.read_csv("test/21MR1027.vcf.gz", skiprows=index_df, compression="gzip", sep='\t',
+    df_vcf = pd.read_csv(os.path.abspath(args.input), skiprows=index_df, compression="gzip", sep='\t',
                          usecols=['#CHROM', 'POS', 'REF', 'ALT', 'ID', sample])
     return df_vcf, sample
 
@@ -94,12 +95,19 @@ def main():
     var_list, snp_dict = generate_required_lists(snp_df)
     result = process_snp_df(df, var_list, sample_name, snp_dict, snp_df)
     final_df = generate_output(result)
+    final_df.to_csv(os.path.abspath(args.output), index=False, sep='\t')
+
+    mod_scores = admix(os.path.abspath(args.output), args.model)
+
+    with open(os.path.join(os.path.split(args.output)[0],
+                           f"{os.path.split(args.output)[1].split('.')[:-1]}_G25.txt"), 'w') as g_scores:
+        g_scores.write(f"{os.path.split(args.output)[1].split('.')[:-1]},{mod_scores}")
 
     stop_time = time()
 
-    print(f'Finished in {str(ceil(stop_time - start_time))} seconds')
+    print("Completed successfully!")
 
-    return final_df.to_csv(os.path.abspath(args.output), index=False, sep='\t')
+    return print(f'Finished in {str(ceil(stop_time - start_time))} seconds')
 
 
 if __name__ == '__main__':
