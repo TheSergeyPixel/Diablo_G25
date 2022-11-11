@@ -4,7 +4,7 @@
 (implemented with [admix](https://github.com/stevenliuyi/admix)).
 
 ## Table of Contents
-1. [Example](#Installation)
+1. [Installation](#Installation)
 
 ## Installation
 
@@ -13,5 +13,4 @@ Currently, the best way to install Diablo G25 is to git clone the repository and
 ```
 git clone https://github.com/TheSergeyPixel/Diablo_G25
 conda env create -f /path/to/cloned/repo/diablo_g25.yml 
-
 ```
