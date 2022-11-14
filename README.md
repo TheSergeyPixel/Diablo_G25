@@ -6,7 +6,7 @@
 ## Table of Contents
 1. [Installation](#Installation)
 2. [Usage](#Usage)
-3. [How to convert the result into G25 scores](#How to convert the result into G25 scores)
+3. [How to convert the result into G25 scores](#how-to-convert-the-result-into-g25-scores)
 
 ## Installation
 
@@ -52,7 +52,7 @@ After you have obtained the scores for the model you chose, you can convert them
 2. Choose the model you used from **Linear regression matrix** field
 3. **Simulated G25 coordinates** field will auto generate your simulated G25 scores
 4. You can proceed to [Vahaduo admixture calculator](https://vahaduo.github.io/vahaduo/) to estimate admixture 
-proportions and calculate Euclidean distances.<br\> 
+proportions and calculate Euclidean distances. 
 
 When you open Vahaduo admixture calculator, you would need to paste your G25 coordinates into **target** field, 
 G25 populations (can be downloaded from another [Vahaduo tool](https://vahaduo.github.io/g25download/)) into **source** 
