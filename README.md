@@ -59,7 +59,9 @@ G25 populations (can be downloaded from another [Vahaduo tool](https://vahaduo.g
 field followed by choice of desired options and running the tool at **single** tab if you have one 
 sample (line) in your target field or **multi** if you have multiple samples.
 
-https://user-images.githubusercontent.com/68028950/201698450-197468cf-650a-4f14-a2f9-906a1eacd45d.mp4
+https://user-images.githubusercontent.com/68028950/201698698-eb22e5dd-4478-4b62-9c74-62e4a29b5d5a.mp4
+
+
 
 
 
