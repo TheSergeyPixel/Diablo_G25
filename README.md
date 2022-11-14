@@ -30,8 +30,8 @@ We are currently working on creating conda package.
 
 ## Usage
 
-Diablo G25 requires basic **gzipped** VCF file (for example, HaplotypeCaller + GenotypeGVCFs output) as input. The output 
-is always generated as tsv file. Run main.py from downloaded repository as follows:
+Diablo G25 requires basic **gzipped** VCF file (for example, HaplotypeCaller + GenotypeGVCFs output) as input. The 
+output is always generated as tsv file. Run main.py from downloaded repository as follows:
 
 ```
 python main.py -i /path/to/vcf/file.vcf -o /desired/output/direcotry/output.tsv -m model_name
@@ -57,7 +57,10 @@ proportions and calculate Euclidean distances.
 When you open Vahaduo admixture calculator, you would need to paste your G25 coordinates into **target** field, 
 G25 populations (can be downloaded from another [Vahaduo tool](https://vahaduo.github.io/g25download/)) into **source** 
 field followed by choice of desired options and running the tool at **single** tab if you have one 
-sample (line) in your target field or **multi** if you have multiple samples.
+sample (line) in your target field or **multi** if you have multiple samples. 
+<br/>
+
+We have also provided a video to visualize aforementioned steps:
 
 https://user-images.githubusercontent.com/68028950/201698698-eb22e5dd-4478-4b62-9c74-62e4a29b5d5a.mp4
 
