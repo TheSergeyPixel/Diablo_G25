@@ -58,3 +58,10 @@ When you open Vahaduo admixture calculator, you would need to paste your G25 coo
 G25 populations (can be downloaded from another [Vahaduo tool](https://vahaduo.github.io/g25download/)) into **source** 
 field followed by choice of desired options and running the tool at **single** tab if you have one 
 sample (line) in your target field or **multi** if you have multiple samples.
+
+https://user-images.githubusercontent.com/68028950/201698450-197468cf-650a-4f14-a2f9-906a1eacd45d.mp4
+
+
+
+
+
