@@ -9,4 +9,3 @@ def admix(in_file, model):
     ser = df.iloc[:, -1].str.split(": ", expand=True)[1]
     admix_scores = ",".join(a.strip('%') for a in ser)
     return admix_scores
-

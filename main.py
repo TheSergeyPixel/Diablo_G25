@@ -10,7 +10,7 @@ parser = argparse.ArgumentParser(description='Diablo_G25')
 
 parser.add_argument('-i', '--input', required=True, help='Input as vcf.gz file', type=str)
 parser.add_argument('-o', '--output', required=True, help='Output in txt file', type=str)
-parser.add_argument('-m', '--model', required=False, help='model to use in admix', type=str)
+parser.add_argument('-m', '--model', required=False, help='model to use for admixture', type=str, default='K36')
 
 args = parser.parse_args()
 
