@@ -30,8 +30,10 @@ We are currently working on creating conda package.
 
 ## Usage
 
-Diablo G25 requires basic **gzipped** VCF file (for example, HaplotypeCaller + GenotypeGVCFs output) as input. The 
-output is always generated as tsv file. Run main.py from downloaded repository as follows:
+Diablo G25 requires basic **gzipped** VCF file (for example, HaplotypeCaller + GenotypeGVCFs output) as input.
+Important to note, that **VCF has to be annotated with rsID** in ID column (e.g with GATK VariantAnnotator). <br/>
+ <br/>
+The output is always generated as tsv file. Run main.py from downloaded repository as follows:
 
 ```
 python main.py -i /path/to/vcf/file.vcf -o /desired/output/direcotry/output.tsv -m model_name

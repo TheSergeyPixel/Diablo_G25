@@ -101,7 +101,8 @@ def main():
     mod_scores = admix(os.path.abspath(args.output), args.model)
 
     with open(os.path.join(os.path.split(args.output)[0],
-                           f"{''.join(os.path.split(args.output)[1].split('.')[:-1])}_G25.tsv"), 'w') as g_scores:
+                           f"{''.join(os.path.split(args.output)[1].split('.')[:-1])}_{args.model}.tsv"), 'w') \
+            as g_scores:
         g_scores.write(f"{''.join(os.path.split(args.output)[1].split('.')[:-1])},{mod_scores}")
 
     stop_time = time()
