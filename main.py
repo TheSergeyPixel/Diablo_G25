@@ -10,7 +10,7 @@ parser = argparse.ArgumentParser(description='Diablo_G25')
 
 parser.add_argument('-i', '--input', required=True, help='Input as vcf.gz file', type=str)
 parser.add_argument('-o', '--output', required=True, help='Output in txt file', type=str)
-parser.add_argument('-m', '--model', required=False, help='model to use for admixture', type=str, default='K36')
+parser.add_argument('-m', '--model', required=False, help='Model to use for admixture', type=str, default='K36')
 
 args = parser.parse_args()
 
@@ -89,7 +89,7 @@ def generate_output(processed_snp_df):
 
 def main():
     start_time = time()
-
+    args.output = os.path.abspath(args.output)
     df, sample_name = read_vcf()
     snp_df = read_snp()
     var_list, snp_dict = generate_required_lists(snp_df)
