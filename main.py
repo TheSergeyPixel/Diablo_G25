@@ -28,7 +28,7 @@ def read_vcf():
 
 
 def read_snp():
-    snp_df = pd.read_csv("db/23andmevars.tsv", sep='\t')
+    snp_df = pd.read_csv("db/23andme_hg19.tsv", sep='\t')
     snp_df = snp_df[snp_df['REF'].str.len() == 1]
     return snp_df
 
